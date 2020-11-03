@@ -1,0 +1,19 @@
+<div class="gallery">
+  <div class="row">
+    <div *ngFor="let item of items; let i = index" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="gallery__buttons">
+        <button routerLink="/locations" routerLinkActive="gallery__btn__enabled" (click)="addFavorite(item)" class="gallery__btn">ADD TO FAVORITES</button>
+        <button routerLink="/characters" routerLinkActive="gallery__btn__enabled" (click)="addFavorite(item)" class="gallery__btn">ADD TO FAVORITES</button>
+        <button routerLink="/favorite" routerLinkActive="gallery__btn__enabled" (click)="deleteFavorite(i)" class="gallery__btn">DELETE FROM FAVORITES</button>
+      </div>
+      <figure routerLink="/characters/{{item.id}}" class="gallery__figure">
+        <img src="{{item.image ? item.image : 'assets/img/earth.png'}}" alt="Rick and Morty image" class="gallery__img">
+        <figcaption class="gallery__figcaption">
+          <p class="gallery__text">{{item.name}}</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+

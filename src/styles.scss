@@ -1,0 +1,14 @@
+@import 'styles/imports/settings.imports';
+
+@import '~bootstrap/scss/bootstrap-grid';
+
+@font-face {
+  font-family: rickandmorty;
+  src: url('assets/fonts/rickandmortyTypo.otf') format('opentype');
+}
+
+body {
+  margin: 0;
+  color: white;
+  font-family: rickandmorty;
+}

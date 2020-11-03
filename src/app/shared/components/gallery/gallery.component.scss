@@ -1,0 +1,62 @@
+.gallery {
+
+  &__figure{
+    margin: 16px 0;
+    text-align: center;
+  }
+
+  &__img {
+    border: 0.5vh solid #00AFC8;
+    width: 100%;
+    &:hover {
+      opacity: 60%;
+      cursor: pointer;
+    }
+  }
+
+  &__figcaption{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text{
+    font-size: 36px;
+    color: #00AFC8;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: table-cell;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+  &__btn {
+    background-color: #00AFC8;
+    color: white;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding: 7px;
+    border: 3px solid #00AFC8;
+    padding: 10px;
+    cursor: pointer;
+    font-family: rickandmorty, 'sans-serif';
+    font-weight: lighter;
+    font-size: 20px;
+    display: none;
+    &:hover {
+      background-color: white;
+      color: #00AFC8;
+      border: 3px solid #00AFC8;
+    }
+    &__enabled {
+      display: inline;
+    }
+  }
+
+  &__buttons {
+    text-align: center;
+  }
+}

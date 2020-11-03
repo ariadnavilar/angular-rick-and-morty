@@ -1,0 +1,21 @@
+@import '../../../../shared/components/gallery/gallery.component';
+
+.detailinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00AFC8;
+  font-size: 35px;
+  p {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.gallery {
+  &__img {
+    width: auto;
+    margin-top: 40px;
+  }
+}
